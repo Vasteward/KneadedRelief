@@ -20,7 +20,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contact</title>
+    <meta name="description" content="Feel free to contact the massage therapist. Prompt replies.">
+    <meta name="keywords" content="Massage Therapy, therapy, massage, masseuse, bodywork, relief, therapist, health, acupressure, reflexology, swedish massage, trigger point therapy, zen shiatsu, abmp, professional, associated bodywork & massage professions, benefits, learn, age-fighting">
+    <meta name="author" content="Vinci Allen-Steward">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="subject" content="Massage Therapy | Bodywork">
+    <meta name="owner" content="Maki Evans">
+    <meta name="page-title" content="Contact">
+
+    <title>Inquiry about massage? Back-ache? Migraine? Ask the masseuse| Kneaded Relief </title>
+    <!-- <title>Contact</title> -->
     <!--LINKS TO INTERNAL FILES-->
     <link rel="stylesheet" href="../assets/css/styles.css">
     <link rel="stylesheet" href="../assets/css/alt.css">
@@ -40,9 +49,6 @@
 
 
 </head>
-<!-- TODO: add reserve button -->
-<!-- TODO: add space between the submit button and the image beneath it -->
-<!-- TODO: reCAPTCHA -->
 <body>
     <div id="basin">
         <section class="navbar">
@@ -52,7 +58,6 @@
             </div>
         </section>
         <nav class="overlay" id="myNav">
-
             <div>
                 <ul class="overlay-content">
                     <li>
@@ -96,11 +101,9 @@
             <!-- return false= stops the normal behavior that usually that usually happens when a person submits  a form -->
             <!-- //action is being sent to this page via the server super global -->
                 <form id="contact-logic" method="post" action="contact-logic.php">
-                    <!-- TODO:recaptcha -->
                     <!-- https://developers.google.com/recaptcha/docs/display -->
                     <p class="full" >
                         <label for="subject">Subject Matter</label>
-                        <!-- <small>Reason for writing today</small> -->
                         <select id="s" name="subject">
                             <option value="appointment">Appointment Inquiry</option>
                             <option value="question">Question/More Information</option>
@@ -108,7 +111,6 @@
                             <option value="join">Join Mailing List</option>
                             <option value="other">Other</option>
                         </select>
-                        <!-- <input id="s" type="text" name="subject" placeholder="Subject" > -->
                     </p>
                     <p>
                         <label for="first-name">First Name</label>
@@ -126,7 +128,6 @@
                     <p>
                         <label for="phone">Phone Number</label>
                         <input id="p" type="text" name="phone" placeholder="Format: 123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" <?php echo isset($fields['phone']) ? e($fields['phone']) : '' ?> >
-                        <!-- <small style="color: white;">Format: 123-456-7890</small> -->
                     </p>
                     <p>
                         <label for="email">Email Address</label>
@@ -144,17 +145,11 @@
                             <img src="../assets/images/icons/email.png" alt="Email">
                         </label>
                     </p>
-                    <!-- <div class="g-recaptcha" data-sitekey="your_site_key"></div> -->
-
                     <p class="full">
                         <button id="submitForm" type="submit" name="submit" class="submit animated">Submit</button>
-                        <!-- <input id="submitForm"  type="submit" name="submit" value="Submit Form" class="submit animated"> -->
                     </p>
-                    <!-- <p class="full"><input type="submit" value="Submit"></p> -->
                 </form>
                 <br>
-                <!-- <img id="call" src="../assets/images/pictures/pavan-trikutam-1660-unsplash.jpg" alt=""> -->
-
             </div>
         </section>
         <div id="box-4">
@@ -174,9 +169,6 @@
         </div>
     </footer>
     <script>
-        // function submit(){
-        //     document.getElementById('submit').classList.add('hinge');
-        // }
         $(document).ready(function(){
             $('.box-2').addClass('bounceIn');
             $(".submit").click(function(){

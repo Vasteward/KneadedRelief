@@ -202,10 +202,10 @@ button#reserve:active{
 }
 
 button#reserve:hover{
-     text-shadow: 0 0 2em rgba(255,255,255,1);
-     color:#FFFFFF;
-     border-color:#FFFFFF;
-    }
+    text-shadow: 0 0 2em rgba(255,255,255,1);
+    color:#FFFFFF;
+    border-color:#FFFFFF;
+}
 
 
 
@@ -548,4 +548,9 @@ a.link:hover{
     transition: .3s;
     padding: 6px;
 
+}
+
+p.signature{
+    font-family: 'Arizonia', cursive;
+    font-size: 50px;
 }

@@ -4,7 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>FAQs</title>
+    <meta name="description" content="Where will my massage or bodywork session take place? Are ther different kinds of massage and bodywork? What will the massage or bodywork feel like?">
+    <meta name="keywords" content="Massage Therapy, therapy, massage, masseuse, bodywork, relief, therapist, health, acupressure, reflexology, swedish massage, trigger point therapy, zen shiatsu, abmp, professional, associated bodywork & massage professions, benefits, learn, age-fighting">
+    <meta name="author" content="Vinci Allen-Steward">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="subject" content="Massage Therapy | Bodywork">
+    <meta name="owner" content="Maki Evans">
+    <meta name="page-title" content="FAQs">
+
+    <title>10+ frequently asked questions | Kneaded Relief </title>
     <!--LINKS TO INTERNAL FILES-->
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/css/alt.css">
@@ -23,9 +31,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </head>
-<!-- TODO: omit gargantuan space between the search bar and box-2
-TODO: fix the reserve button, needs to remove the text-decoration
-TODO: add text-shadow to text -->
 <body>
     <div id="basin">
         <section class="navbar">
@@ -54,6 +59,7 @@ TODO: add text-shadow to text -->
                             <img class="member-icon" src="./assets/images/icons/abmp-only.png" alt="ABMP site">
                         </a>
                     </li>
+                    <li><a href="./cForms.html">Client Forms</a></li>
                 </ul>
             </div>
         </nav>
@@ -64,10 +70,6 @@ TODO: add text-shadow to text -->
         <div id="search-bar">
             <input id="search" type="text" onkeyup="searchFaq()" placeholder="Search..." title="Type in a keyword">
         </div>
-        <!-- TODO: the answers will transition out to the left and right alternatingly with an image of what they can expect -->
-        <!-- TODO: ajax search bar -->
-        <!-- TODO: display flex on desktop version 2s -->
-
         <section id="faqs" class="box-2">
             <div class="question-box">
                 <h2 class="question">Where will my massage or bodywork session take place? </h2>
@@ -129,15 +131,11 @@ TODO: add text-shadow to text -->
     </footer>
 
     <script>
-        // function submit(){
-        //     document.getElementById('submit').classList.add('hinge');
-        // }
         $(document).ready(function(){
             $('.container').addClass('bounceIn');
             $(".submit").click(function(){
                 $('.container').addClass('rubberBand');
                 window.stop();
-    
             })
             var question = document.getElementsByClassName("question-box");
             var answer = document.getElementsByClassName('answer');
@@ -153,7 +151,6 @@ TODO: add text-shadow to text -->
                 })
             }
         })
-        // TODO: create a description for each. People may not know, providing a resource will make it easier for people to understand
 
     </script>
 </body>

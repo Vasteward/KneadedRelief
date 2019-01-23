@@ -130,6 +130,7 @@
     /* FAQ */
     section.about > p, .question{
         font-size: 30px;
+        font-weight: 300;
     }
     section.about > p > a, .row, section.box-2 > div.question-box > .answer {
         font-size: 22px;

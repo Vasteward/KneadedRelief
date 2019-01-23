@@ -85,6 +85,8 @@ function highlightPageTitle(){
         console.log("NavLink: " + navLinks[i].innerHTML);
         console.log("MetaTitle: "+ metaTitle);
         console.log(navTitle == title);
+        console.log(metaTitle == navTitle);
+        
         // console.log("\n\n\n");
         if(metaTitle == navTitle){
             // alert(navTitle + " = " + title);
@@ -95,3 +97,4 @@ function highlightPageTitle(){
     }
 
 }
+
