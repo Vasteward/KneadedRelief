@@ -3,7 +3,7 @@
     require_once '../helpers/security.php';
     // echo e('<script>alert(1);</script>');
 
-    print_r($_SESSION);
+    // print_r($_SESSION);
 
     //if errors are set we wan tto assign the arrays procurred to the current array of eererrosrors, otherewise set an empty array
     $errors = isset($_SESSION['errors']) ? $_SESSION['errors'] : [];

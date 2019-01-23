@@ -105,23 +105,23 @@ BENEFIT  PICTURES
 /* BENEFITS - pos */
 
 #serenity{
-    background: url("./../images/benefits/serenity.jpg");
+    background: url("./../images/benefits/serene.jpg");
 }
 
 #sleep{
-    background: url("./../images/benefits/dakota-corbin-272274-unsplash.jpg");
+    background: url("./../images/benefits/baby.jpg");
 }
 
 #energy{
-    background: url("./../images/benefits/energy.jpg");
+    background: url("./../images/benefits/dog.jpg");
 }
 
 #concentration{
-    background: url("./../images/benefits/concentration.jpg");
+    background: url("./../images/benefits/concentrate.jpg");
 }
 
 #rest{
-    background: url("./../images/benefits/rest.jpg");
+    background: url("./../images/benefits/relax.jpg");
 }
 #serenity, #sleep, #energy, #concentration, #rest, #headache, #cramping, #heal, #exercise, #tired-muscles, #swelling, #oxygen, #scar, #anxiety, #flexibility, #back-pain, #skin, #defense, #medication, #pregnant, #reflexology, #acupressure, #trigger, #shiatsu, #swedish, #late, #no-show, #a24hrs, .card{
     height: 100px;
