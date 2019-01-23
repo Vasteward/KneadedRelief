@@ -1,18 +1,18 @@
 /* SERVICES IMAGES */
 #acupressure{
-    background: url("./../images/massage_cards/toa-heftiba-578093-unsplash.jpg");
+    background: url("./../images/massage_cards/accupressure.jpg");
 }
 #reflexology{
-    background: url("./../images/massage_cards/matheus-ferrero-159633-unsplash.jpg");
+    background: url("./../images/massage_cards/reflex.jpg");
 }
 #swedish{
-    background: url("./../images/massage_cards/christin-hume-505815-unsplash.jpg");
+    background: url("./../images/massage_cards/swed.jpg");
 }
 #trigger{
-    background: url("./../images/massage_cards/adult-body-close-up-275768.jpg");
+    background: url("./../images/massage_cards/trigger.jpg");
 }
 #shiatsu{
-    background: url("./../images/massage_cards/antonika-chanel-467884-unsplash.jpg");
+    background: url("./../images/massage_cards/shiat.jpg");
 }
 
 /* CANCELLATION POLICY IMAGES */
@@ -26,7 +26,28 @@
 #late{
     background: url("./../images/pictures/fabrizio-verrecchia-448425-unsplash.jpg");
 }
+
+/* #late{
+    width: 3024px; height: 2575px;
+    background: url('./../images/pictures/css_sprites.png') -3918px -10px;
+}
+
+x
+#no-show{
+    width: 2400px; height: 1600px;
+    background: url('./../images/pictures/css_sprites.png') -10px -2622px;
+}
+
+x
+#a24hrs{
+    width: 3888px; height: 2592px;
+    background: url('./../images/pictures/css_sprites.png') -10px -10px;
+} */
+
+
 /* 
+
+
 
 BENEFIT  PICTURES
 #pregnant{
