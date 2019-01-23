@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hours and Scheduling</title>
+    <!--LINKS TO INTERNAL FILES-->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/alt.css">
+    <link rel="stylesheet" href="./assets/css/images.css">
+    <link rel="stylesheet" href="./assets/css/media.css">
+
+
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <link rel="shortcut icon" href="./assets/images/icons/icons8-stones-64.png" type="image/x-icon">
+
+    <!--FONTS-->
+    <link href="https://fonts.googleapis.com/css?family=Arizonia" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<!-- FIXME: images are huge -->
+<!-- FIXME: text-shadow for the second box on the page -->
+<!-- FIXME: policy placement and images -->
+<!-- FIXME: navbar -->
+<body>
+    <div id="basin">
+        <section class="navbar">
+            <div>
+                <a class="nav-title">Kneaded Relief</a>
+                <span id="cheeseburger" style="font-size:30px;cursor:pointer" onclick="openClose()">&#9776;</span>
+            </div>
+        </section>
+        <nav class="overlay" id="myNav">
+            <div>
+                <ul class="overlay-content">
+                    <li>
+                        <a id="close" style="float: right; width: 90px; margin-right: 20px; height: 20px; border-radius: 25px;    font-family: 'Josefin Sans', sans-serif;" onclick="openClose()">&times;</a>
+                    </li>
+                    <br>
+                    <br>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./services.html">Services</a></li>
+                    <li><a href="./hours.html">Hours and Scheduling</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./benefits.html">Benefits</a></li>
+                    <li><a href="./faq.html">FAQ</a></li>
+                    <li>
+                        <a href="https://www.abmp.com/">
+                            <img class="member-icon" src="./assets/images/icons/abmp-only.png" alt="ABMP site">
+                        </a>
+                    </li>
+                    <li><a href="./cForms.html">Client Forms</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="grid-container">
+            <header>
+                <h1 class="title">Hours & Scheduling</h1>
+            </header>
+            <section class="box-2">
+                <img class="card left" align="left" src="./assets/images/pictures/paul-hanaoka-608788-unsplash.jpg" alt="Person holding phone">
+                <p id="large-text">Upon booking, you will either receive an email or a phone call to prepare for your individualized sessions. 
+                <br>
+                    <em class="emphasis">*An intake form is necessary before any services can be rendered.*</em>
+                </p>
+            </section>
+                <!-- TODO: grid-side by side, deliniated by a right faint border; possible drop-down once clicked -->
+            <div id="cancellation" class="box-3">
+                <h2 class="title title-small">Cancellation Policy</h2>
+                <img class="right card" src="./assets/images/pictures/fabian-moller-401625-unsplash.jpg" alt="Just Breathe" align="right">
+                <p>We understand that unanticipated events happen occasionally in everyone’s life. In our desire to be effective and fair to all clients, the following policies are honored:
+                </p>
+                <button id="show-policies">
+                    <p class="btn">Policies</p>
+                </button>
+                <div id="box-3" class="policies">
+                    <div class="policy desktop" >
+                        <button id="a24hrs" class="accordion card">
+                            <p class="policy-text">24 hour notice </p>
+                        </button>
+                        <p id="a24hrs-panel" class="panel">This allows someone else the opportunity to schedule an appointment. If you are unable to give us 24 hours advance notice you will be charged $45. This amount must be paid prior to your next scheduled appointment.</p>
+                    </div>
+                    <div class="policy desktop" >
+                        <button id="no-show" class="accordion card">
+                            <p class="policy-text">No Shows</p>
+                        </button>
+                        <p id="no-show-panel" class="panel">Anyone who either forgets or consciously chooses to forgo their appointment for whatever reason will be considered a “no-show.” They will be charged for the <strong>full price of the “missed”</strong> appointment.</p>
+                    </div>
+                    <div class="policy desktop">
+                        <button id="late" class="accordion card">
+                            <p class="policy-text">Late Arrivals</p>
+                        </button>
+                        <p id="late-panel" class="panel">If you arrive late, your session may be shortened in order to accommodate others whose appointments follow yours. Depending upon how late you arrive, your therapist will then determine if there is enough time remaining to start a treatment. Regardless of the length of the treatment actually given, <strong>you will be responsible for the “full” session</strong>. Out of respect and consideration to your therapist and other customers, <strong>please</strong>  plan accordingly and be on time.</p>
+                    </div>
+                </div>
+            </div>
+            
+        
+            <!-- <p><em class="pop">We look forward to serving you!</em></p> -->
+            <div id="box-4">
+                <button id="reserve">
+                    <a href="https://squareup.com/appointments/book/NWK5QMSG0C50D/kneaded-relief"><span>Reserve An Appointment</span></a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <a href="https://www.abmp.com/"><img class="member-icon" src="./assets/images/icons/abmp2.png" alt="Link to the Associated Bodywork & Massage Professionals website">
+            </a>            
+            <p>&copy; Copyright 2019 Kneaded Relief. All rights reserved. </p>
+        </div>
+    </footer>
+
+    <script>
+
+        $(document).ready(function(){
+            console.log("Height: " + window.screen.availHeight+ "\n" + "Width: " + window.screen.availWidth); //shows the screen height/width resolution
+            // TRIAL
+            // ALL OF THE BELOW equate to the same #, because I'm most concerned about the window size because that is what everything is based on, I've chose to use it
+            //returns the width of the element id i specified for the body
+            // console.log("BASIN width:"+$("#basin").width());
+            //reurns the width of the HTML document
+            // console.log("DOCUMENT width:"+$(document).width());
+            //returns the width of browser viewport
+            // console.log("WIDNOW width:"+$(window).width());
+
+            //if screen resolution is larger than 1024, remove class that allows the user to toggle
+            var policy = document.getElementsByClassName("policy");
+            var fullScreen = document.getElementsByClassName("desktop");
+            // console.log(fullScreen.classList);
+
+            if($(window).width() > 1024){
+                // document.getElementsByClassName("navbar").style.display = "none";
+                console.log("I PRINTED because the width is greater than 1024: " +window.screen.availWidth);
+                //BEFORE
+                console.log($(policy).text() + " next up is: \n\n\n\n " + $(fullScreen).text());
+
+
+                // $(policy).removeClass(fullScreen);
+                //AFTER
+                for(var i = 0; i < policy.length; i++){
+                    console.log(policy.length);
+                    $(policy[i]).removeClass("desktop")
+
+                }
+
+                console.log($(policy).hasClass(fullScreen));//hasClass returns a boolean; if the class is present or not, true or false.
+                console.log(document.getElementsByClassName("policy"));//shows the tags of the elements
+                console.log("the following should be void, as the 'desktop' class was removed:" + $(fullScreen).text());
+
+
+                // var x = document.getElementsByClassName("policy")[0].className;
+                // console.log(x);
+
+
+
+            } else{
+                var acc = document.getElementsByClassName('desktop');
+                for(let i = 0; i < acc.length; i++){
+                    $(acc[i]).click(function(){
+                        console.log(acc[i])//WORKS
+                        // var children = acc[i].children.length;
+                        // console.log(children);//WORKS-shows the number of children
+                        var show = acc[i].childNodes;
+                        console.log(show);
+                        // return show
+                        $(show).slideToggle(800)        
+                    })
+                }
+                $("#show-policies").click(function(){
+                    $(".policies").slideToggle({
+                        left: '250px',
+                        opacity: '0.5',
+                        height: '150px',
+                        width: '150px'
+                    }, 1000);
+                });
+            }
+
+
+        });
+
+        // $(selector).toggle(speed,easing,callback)
+
+
+    </script>
+</body>
+</html>
+
+

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Benefits</title>
+    <!--LINKS TO INTERNAL FILES-->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/alt.css">
+    <link rel="stylesheet" href="./assets/css/images.css">
+    <link rel="stylesheet" href="./assets/css/media.css">
+
+    <script src="./assets/js/app.js"></script>
+    <link rel="shortcut icon" href="./assets/images/icons/icons8-stones-64.png" type="image/x-icon">
+
+    <!--FONTS-->
+    <link href="https://fonts.googleapis.com/css?family=Arizonia" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <!-- ANIAMTE.CSS -->
+    <link rel="stylesheet" href="animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<!-- TODO: add text-shadow -->
+<body>
+    <div id="basin">
+        <section class="navbar">
+            <div>
+                <a class="nav-title">Kneaded Relief</a>
+                <span id="cheeseburger" style="font-size:30px;cursor:pointer" onclick="openClose()">&#9776;</span>
+            </div>
+        </section>
+        <nav class="overlay" id="myNav">
+            <div>
+                <ul class="overlay-content">
+                    <li>
+                        <a id="close" style="float: right; width: 90px; margin-right: 20px; height: 20px; border-radius: 25px;    font-family: 'Josefin Sans', sans-serif;" onclick="openClose()">&times;</a>
+                    </li>
+                    <br>
+                    <br>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./services.html">Services</a></li>
+                    <li><a href="./hours.html">Hours & Scheduling</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./benefits.html">Benefits</a></li>
+                    <li><a href="./faq.html">FAQ</a></li>
+                    <li>
+                        <a href="https://www.abmp.com/">
+                            <img class="member-icon" src="./assets/images/icons/abmp-only.png" alt="ABMP site">
+                        </a>
+                    </li>
+                    <li><a href="./cForms.html">Client Forms</a></li>
+                </ul>
+            </div>        
+        </nav>
+        <header>
+            <h1 class="title">Benefits Of Massage</h1>
+        </header>
+        <div class="box-2">
+            <p>Experts estimate that upwards of ninety percent of disease is stress-related. And perhaps nothing ages us faster, internally and externally, than high stress. Massage is an effective tool for managing this stress, which translates into:</p>
+            <br>
+            <div id="cards">
+                <div class="card-box">                
+                    <div>
+                        <div class="card benefits-desktop-card" id="serenity">
+                            <p>Decreased anxiety</p>                            
+                        </div>
+                    </div>
+                    <p>Serenity</p>
+                </div>
+                <div class="card-box">                
+                    <div>
+                        <div class="card benefits-desktop-card" id="sleep">
+                            <p>Enhanced sleep quality.</p>
+                        </div>
+                    </div>
+                    <p>Sleep</p>
+                </div>
+                <div class="card-box">                
+                    <div>
+                        <div class="card benefits-desktop-card" id="energy">
+                            <p>Greater energy</p>
+                        </div>
+                    </div>
+                    <p>Energy</p>
+                </div>
+                <div class="card-box">                
+                    <div>
+                        <div class="card benefits-desktop-card" id="concentration">
+                            <p>Improved concentration</p>
+                        </div>
+                    </div>
+                    <p>Concentration</p>
+                </div>
+                <div class="card-box">                
+                    <div>
+                        <div class="card benefits-desktop-card" id="rest">
+                            <p>Reduced fatigue</p>
+                        </div>
+                    </div>
+                    <p>Rest</p>
+                </div>
+            </div>
+            <p>Massage and bodywork can also help specifically address a number of health issues and ameliorate:</p>
+            <br>
+            <div class="row">
+                <div class="column" style="background-color:rgba(190, 124, 18, 0.558);">
+                    <p>Range of Motion</p>
+                    <p>Pregnancy</p>
+                    <p>Drug Dependency</p>
+                    <p>Immune System</p>
+                    <p>Atrophy</p>
+                    <p>Pre/Post Workout</p>
+                    <p>Anxiety</p>
+                    <!-- <p>Skin</p> -->
+
+                </div>
+                <div class="column" style="background-color:rgba(158, 105, 1, 0.535);">
+                    <p>Scaring</p>
+                    <p>Circulation</p>
+                    <p>Inflammation</p>
+                    <p>Cramps</p>
+                    <p>Muscle fatigue</p>
+                    <p>Pain</p>
+                    <p>Migraines</p>
+                </div>
+            </div>
+        </div>
+        <div id="box-4">
+            <button id="reserve">
+                <a href="https://squareup.com/appointments/book/NWK5QMSG0C50D/kneaded-relief"><span>Reserve An Appointment</span></a>
+            </button>        
+        </div>
+    </div>
+    <footer>
+        <div>
+            <a href="https://www.abmp.com/"><img class="member-icon" src="./assets/images/icons/abmp2.png" alt="Link to the Associated Bodywork & Massage Professionals website">
+            </a>                
+            <p>&copy; Copyright 2019 Kneaded Relief. All rights reserved. </p>
+        </div>
+    </footer>
+    <script>
+        // function submit(){
+        //     document.getElementById('submit').classList.add('hinge');
+        // }
+        $(document).ready(function(){
+            $('.container').addClass('bounceIn');
+            $(".submit").click(function(){
+                $('.container').addClass('rubberBand');
+                window.stop();
+    
+            })
+        })
+        // TODO: create a description for each. People may not know, providing a resource will make it easier for people to understand
+
+    </script>
+</body>
+</html>

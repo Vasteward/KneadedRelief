@@ -1,0 +1,123 @@
+/* SERVICES IMAGES */
+#acupressure{
+    background: url("./../images/massage_cards/toa-heftiba-578093-unsplash.jpg");
+}
+#reflexology{
+    background: url("./../images/massage_cards/matheus-ferrero-159633-unsplash.jpg");
+}
+#swedish{
+    background: url("./../images/massage_cards/christin-hume-505815-unsplash.jpg");
+}
+#trigger{
+    background: url("./../images/massage_cards/adult-body-close-up-275768.jpg");
+}
+#shiatsu{
+    background: url("./../images/massage_cards/antonika-chanel-467884-unsplash.jpg");
+}
+
+/* CANCELLATION POLICY IMAGES */
+
+#a24hrs{
+    background: url("./../images/pictures/sonja-langford-357-unsplash.jpg");
+}
+#no-show{
+    background: url("./../images/pictures/hoshino-ai-60708-unsplash.jpg");
+}
+#late{
+    background: url("./../images/pictures/fabrizio-verrecchia-448425-unsplash.jpg");
+}
+/* 
+
+BENEFIT  PICTURES
+#pregnant{
+    background: url("./../images/benefits/pregnant.jpg");
+}
+#medication{
+    background: url("./../images/benefits/medication.jpg");
+}
+#defense{
+    background: url("./../images/benefits/defense.jpg");
+}
+#exercise{
+    background: url("./../images/benefits/excercise.jpg");
+}
+#skin{
+    background: url("./../images/benefits/skin.jpg");
+}
+#flexibility{
+    background: url("./../images/benefits/flexibility.jpg");
+}
+#anxiety{
+    background: url("./../images/benefits/anxiety.jpg");
+}
+#scar{
+    background: url("./../images/benefits/scar.jpg");
+}
+#oxygen{
+    background: url("./../images/benefits/oxygen.jpg");
+}
+#swelling{
+    background: url("./../images/benefits/swelling.jpg");
+}
+#cramping{
+    background: url("./../images/benefits/cramping.jpg");
+}
+#tired-muscles{
+    background: url("./../images/benefits/tired-muscles.jpg");
+}
+#heal{
+    background: url("./../images/benefits/heal.jpg");
+}
+#cramping{
+    background: url("./../images/benefits/cramping.jpg");
+}
+
+#headache{
+    background: url("./../images/benefits/headache.jpg");
+}
+
+#back-pain{
+    background: url("./../images/benefits/back-pain.jpg"); 
+}
+
+*/
+/* BENEFITS - pos */
+
+#serenity{
+    background: url("./../images/benefits/serenity.jpg");
+}
+
+#sleep{
+    background: url("./../images/benefits/dakota-corbin-272274-unsplash.jpg");
+}
+
+#energy{
+    background: url("./../images/benefits/energy.jpg");
+}
+
+#concentration{
+    background: url("./../images/benefits/concentration.jpg");
+}
+
+#rest{
+    background: url("./../images/benefits/rest.jpg");
+}
+#serenity, #sleep, #energy, #concentration, #rest, #headache, #cramping, #heal, #exercise, #tired-muscles, #swelling, #oxygen, #scar, #anxiety, #flexibility, #back-pain, #skin, #defense, #medication, #pregnant, #reflexology, #acupressure, #trigger, #shiatsu, #swedish, #late, #no-show, #a24hrs, .card{
+    height: 100px;
+    width: 100px;
+
+    /* responsive */
+    /* max-width: 30%;
+    height: auto; */
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    /* padding: auto 0; */
+    /* padding-top: 5%/; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

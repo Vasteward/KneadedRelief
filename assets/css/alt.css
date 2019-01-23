@@ -1,0 +1,471 @@
+#logo{
+    padding: 14px 16px;
+    font-size: 10px;
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+    color: #eee;
+    font-family: 'Arizonia', cursive;
+}
+
+
+/* CARD */
+
+.card:active > p{
+/* on mobile devices, activate active; on desktop, activate hover */
+/* #reflexology:active, #acupressure:active, #trigger:active, #shiatsu:active, #swedish:hover, .card:hover{ */
+    /* background: black;
+    opacity: 0.5; */
+    /* transition: 0.5s; */
+    color: white;
+    font-weight: bolder;
+    display: block;
+    /* opacity: .8; */
+    text-shadow: 5px 5px 10px black;
+    font-family: 'Josefin Sans', sans-serif;
+    /* filter: brightness(7); */
+
+
+    /* below works in conjunction with the .card > p selector for the active number-show effect */
+    /* -ms-transform: translateY(-50%);
+    transform: translateY(40%);
+     */
+}
+
+.card:active{
+    background: rgb(62, 62, 62);
+    /* opacity: .5; */
+    height: 100px;
+    width: 100px;
+}
+
+.card > p{
+    display: none;   
+}
+
+.card > p.prices:first-child{
+    font-size: 36px;
+}
+
+/* .card:active > p:first-child:before, span.dollar::before{ */
+.card:active > p > span.dollar::before{
+    content: '$';
+    font-size: .6em;
+    top: 0;
+}
+
+/* .card:active > p:after {
+    content: '00';
+    font-size: .100em;
+} */
+
+
+.card-background{
+    background: black;
+    height: 100px;
+    width: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+}
+
+.card-box{
+    display: inline-block;
+}
+
+.card-box > p{
+    font-size: 14px;
+    color: whitesmoke;
+    font-family: 'Josefin Sans', sans-serif;
+    text-shadow: 1px 1px 4px black;
+
+}
+
+.title{
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+    color: #eee;
+    font-family: 'Arizonia', cursive;
+}
+section.box-2, #box-3{
+    margin-bottom: 5%;
+}
+
+/* HOURS AND SCHEDULING */
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+    font-family: 'Arizonia', cursive;
+    /* width: 30%; */
+    display: inline-block;
+    /* trial-in conjunction with text on picture */
+    /* position: relative;
+    text-align: center; */
+}
+
+.policies{
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    margin-top: 5%; 
+    display: none;
+    /* padding: 0 0; */
+    /* align-self: center; */
+}
+
+/* .panel{
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+
+} */
+
+button.accordion > p.policy-text{
+    /* color:white; */
+    text-decoration: none;
+    color: honeydew;
+    /* background: linear-gradient( orange, rgb(255, 123, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    text-align: center;
+    text-shadow: 5px 5px 36px rgb(207, 36, 100), 5px -3px 36px rgb(207, 36, 100);
+    font-size: 20px; 
+    display: block;
+    font-weight: 900;
+    /* color: white; */
+    /* visibility: visible;  */
+    /* z-index: 1000; */
+
+    /* text on picture */
+    /* position: absolute;
+    top: 50%;
+    left: 50%; */
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.left, .right, .accordion{
+    box-shadow: inset; 
+    /* box-shadow: -8px -10px 46px 7px black; */
+}
+
+#late, #no-show, #a24hrs{
+    box-shadow: -12px 6px 43px 1px black;
+}
+
+
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+  
+  /* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    color: honeydew;
+    display: none;
+    overflow: hidden;
+    font-family: 'Josefin Sans', sans-serif;
+    text-shadow: 6px -5px 10px rgba(0, 0, 0, 0.99), 6px 5px 10px rgba(0, 0, 0, 0.99),6px 3px 10px;
+    font-weight: 300;
+}
+
+.policy{
+    display: inline-block;
+    margin: 0 4px 4px 4px;
+    align-self: center;
+    vertical-align: middle;
+}
+
+#cancellation, .box{
+    /* border-style: outset; */
+    /* background-color:rgba(159, 183, 159, 0.3); */
+    /* margin: 0 20px; */
+    /* padding: 20px; */
+    /* margin-bottom: 5%; */
+    /* display: inline-block; */
+    border-style: outset;
+    background-color: rgba(159, 183, 159, 0.3);
+    margin: 0 20px;
+    padding: 20px;
+    margin-bottom: 5%;
+    /* display: inline-block; */
+    background: #00000094;
+
+}
+
+#cancellation > p{
+    font-size: 14px;
+    color: whitesmoke;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+}
+
+h2.title-small{
+    font-size: 30px;
+}
+
+.pop{
+    color: whitesmoke;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.left{
+    margin: 5px 5px;
+}
+
+.right{
+    margin: 5px 5px;
+}
+
+.emphasis{
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    text-shadow: 5px 5px 10px darkorange;
+    font-size: 10px;
+}
+
+
+#call{
+    /* height: 100px; */
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    /* padding: auto 0; */
+    /* padding-top: 5%/; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section.about > p{
+    text-shadow: 5px 5px 10px rgb(42, 37, 20);
+    color: honeydew;
+
+
+}
+.question{
+    font-family: 'Josefin Sans', sans-serif;
+    background: linear-gradient( orange, rgb(255, 123, 0));
+    /* font-family: 'Arizonia', cursive; */
+    width: 100%;
+    text-shadow:5px 5px 10px black;
+    color: white;
+    /* text-align: right; */
+    /* display: block; */
+    /* height: 50px; */
+    box-shadow: -8px 10px 10px 2px black ; 
+    padding: 10px;
+    font-weight: 100;
+    border-radius: 50px 20px;
+    margin-bottom: 10px;
+}
+
+/* .question > h2{
+    float: right;
+    text-align: right;
+    margin: 5px;
+} */
+
+
+section.box-2 > div.question-box > p{
+    font-size: 14px;
+    color: whitesmoke;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#search-bar{
+    width: 100%;
+    margin: 0 auto;
+}
+
+#search{
+    margin: 20px;
+}
+.answer{
+    color: whitesmoke;
+    font-family: 'Josefin Sans', sans-serif;
+    text-shadow:5px 5px 10px black;
+
+}
+
+.btn{
+    display: inline-block;
+    border-radius: 4px;
+    background: linear-gradient( orange, rgb(255, 123, 0));
+    /* border: none; */
+    /* color: #FFFFFF; */
+    text-shadow: 5px 5px 10px black;
+
+    color: honeydew;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    width: 95px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: 5px;
+    vertical-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    box-shadow: inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+    /* font-family: 'Arizonia', cursive; */
+
+}
+
+button > span >  a:visited, a:link{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+nav#myNav > div > ul.overlay-content > li > a#close{
+    color: white;
+}
+
+#close{
+    color: white;
+}
+
+
+.about > p{
+    margin-left: 20px;
+}
+
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+  
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row{
+    color: honeydew;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 11px;
+    text-shadow: -2px 2px 6px rgba(0, 0, 0, 0.82);
+
+}
+
+
+[type=radio] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+  /* IMAGE STYLES */
+[type=radio] + img {
+    cursor: pointer;
+    height: 60px;
+    /* display: inline-block; */
+}
+  
+  /* CHECKED STYLES */
+[type=radio]:checked + img {
+    outline: 2px solid orange;
+    /* text-shadow: 6px 6px 0px red; */
+
+}
+
+section#client-forms > div.client-form > a{
+    font-size: 20px;
+    color: whitesmoke;
+    font-family: 'Josefin Sans', sans-serif;
+    text-shadow: 1px 1px 4px black;
+    text-decoration-line: underline;
+    text-decoration-color: rgb(255, 123, 0);
+    /* solid: the default. Decoration is a single solid line.
+    double: Decoration is a pair of solid lines.
+    dotted: Decoration is a dotted line.
+    dashed: Decoration is a dashed line.
+    wavy: Decoration is a wavy line. */
+    text-decoration-style: double;
+    text-decoration-skip-ink: auto;
+    /* text-decoration-skip: ink; */
+    cursor: pointer;
+}
+
+section#client-forms > div.client-form{
+    padding-bottom: 20px;
+
+}
+
+
+section#client-forms{
+    background: rgba(0, 0, 0, 0.646);
+}
+a[href*="cForms"]{
+    /* text-decoration-line: overline; */
+    text-decoration-color: whitesmoke;
+    text-decoration-style: solid;
+    /* background-color: whitesmoke; */
+    /* color: orange; */
+
+}
+
+.contact-box{
+    background: #0000006e;
+}
+
+select#s{
+    background: linear-gradient( orange, rgb(255, 123, 0));
+    font-family: 'Josefin Sans', sans-serif;
+    color: whitesmoke;
+    text-shadow: 5px 5px 10px black;
+}
+
+select option:hover,
+    select option:focus,
+    select option:active {
+    background-color: purple;
+    background: linear-gradient(#000000, #000000);
+    background-color: #000000 !important; /* for IE */
+    color: #ffed00 !important;
+}
+
+select option:checked {
+    /* background: linear-gradient(#d6d6d6, #d6d6d6); */
+    background-color: #d6d6d6 !important; /* for IE */
+    color: #000000 !important;
+}
+
+#submitForm{
+    /* background: #423c2f; */
+    /* background: rgb(0, 147, 108); */
+    /* background: #1b7f65; */
+    background: #55a1d5ba;
+}
+
+
+button{
+    background: none;
+    outline: none;
+    border: none;
+}
+
+
+
+/* FORMPRAC */
+main{
+    display: flex;
+    flex-direction: column;
+}
+.alert-danger{
+    background-color: red;
+}
