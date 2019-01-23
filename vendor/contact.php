@@ -63,7 +63,7 @@
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="../services.html">Services</a></li>
                     <li><a href="../hours.html">Hours & Scheduling</a></li>
-                    <li><a href="../contact.html">Contact</a></li>
+                    <li><a href="./vendor/contact.php">Contact</a></li>
                     <li><a href="../about.html">About</a></li>
                     <li><a href="../benefits.html">Benefits</a></li>
                     <li><a href="../faq.html">FAQ</a></li>
@@ -108,28 +108,29 @@
                             <option value="join">Join Mailing List</option>
                             <option value="other">Other</option>
                         </select>
-                        <!-- <input id="s" type="text" name="subject" placeholder="Subject" required> -->
+                        <!-- <input id="s" type="text" name="subject" placeholder="Subject" > -->
                     </p>
                     <p>
                         <label for="first-name">First Name</label>
-                        <input id="fn" type="text" name="first_name" placeholder="First Name" <?php echo isset($fields['first_name']) ? 'value="'.e($fields['first_name']).'"' : '' ?> required>
+                        <input id="fn" type="text" name="first_name" placeholder="First Name" <?php echo isset($fields['first_name']) ? 'value="'.e($fields['first_name']).'"' : '' ?> >
                     </p>
                     <p>
                         <label for="last-name">Last Name</label>
-                        <input id="ln" type="text" name="last_name" placeholder="Last Name" <?php echo isset($fields['last_name']) ? 'value="'.e($fields['last_name']).'"' : '' ?> required>
+                        <input id="ln" type="text" name="last_name" placeholder="Last Name" <?php echo isset($fields['last_name']) ? 'value="'.e($fields['last_name']).'"' : '' ?> >
                     </p>
                     <p class="full">
                         <label for="message">Message</label>
-                        <textarea id="m" type="text" name="message" rows="5" placeholder="Write your Message here..." required><?php echo isset($fields['message']) ? e($fields['message']) : '' ?></textarea>
+                        <textarea id="m" type="text" name="message" rows="5" placeholder="Write your Message here..." ><?php echo isset($fields['message']) ? e($fields['message']) : '' ?></textarea>
                     </p>
                     <p class="full">Please enter at least one way we can contact</p>
                     <p>
                         <label for="phone">Phone Number</label>
-                        <input id="p" type="text" name="phone" placeholder="Phone Number" <?php echo isset($fields['phone']) ? e($fields['phone']) : '' ?> required>
+                        <input id="p" type="text" name="phone" placeholder="Format: 123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" <?php echo isset($fields['phone']) ? e($fields['phone']) : '' ?> >
+                        <!-- <small style="color: white;">Format: 123-456-7890</small> -->
                     </p>
                     <p>
                         <label for="email">Email Address</label>
-                        <input id="e" type="email" name="email" placeholder="Email Address" <?php echo isset($fields['email']) ? e($fields['email']) : '' ?> required>
+                        <input id="e" type="email" name="email" placeholder="Email Address" <?php echo isset($fields['email']) ? e($fields['email']) : '' ?> >
                     </p>
                     <p class="full">Indicate how you would like to be responded to
                     </p>
