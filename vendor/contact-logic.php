@@ -15,8 +15,8 @@
         // echo 'all set';
         $fields = [
             'subject' => $_POST['subject'],
-            'first name' => $_POST['first_name'],
-            'last name' => $_POST['last_name'],
+            'first_name' => $_POST['first_name'],
+            'last_name' => $_POST['last_name'],
             'message' => $_POST['message'],
             'phone' => $_POST['phone'],
             'email' => $_POST['email'],
@@ -57,7 +57,7 @@
             $mail->isHTML(true);            //States that we do want to send an HTML email
             //Set the subject line
             $mail->Subject = 'Kneaded Relief - Message';
-            $mail->Body = 'From: '.$fields['first_name'].'('.$fields['email'].')<p>'.$fields['message'].'</p>';
+            $mail->Body = '<strong>From: </strong>'.$fields['first_name'].' '.$fields['last_name'].'('.$fields['email'].')<p><strong>Subject: </strong>'.$fields['subject'].'</p><p>'.$fields['message'].'</p>'.'<p><strong>Communication preference: </strong>'.$fields['preference'].'</p><p><strong>Email: </strong>'.$fields['email'].'/<p><p><strong>Phone Number: </strong></p>'.$fields['phone'].'</p>';
             $mail->FromName = 'Kneaded Relief';
 
             //Read an HTML message body from an external fiale, convert referenced images to embedded,
