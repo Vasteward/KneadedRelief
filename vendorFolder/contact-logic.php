@@ -52,7 +52,7 @@
 
 
             //WHO IT GOES TO
-            $mail->AddAddress('vinci.allensteward@gmail.com', 'Desert Rose');    
+            $mail->AddAddress('evansm29@gmail.com', 'Maki Evans, LMT');    
 
             $mail->isHTML(true);            //States that we do want to send an HTML email
             //Set the subject line
