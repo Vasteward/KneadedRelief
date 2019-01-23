@@ -57,6 +57,12 @@ function searchFaq(){
 
 }
 
+var meta = document.getElementsByTagName("meta");
+
+console.log("I am meta data!" + meta);
+
+console.log(meta["page-title"].content);
+var metaTitle = meta["page-title"].content;
 //function runs on page load
 window.onload = highlightPageTitle;
 
@@ -77,9 +83,10 @@ function highlightPageTitle(){
         navTitle = navLinks[i].innerHTML;
         console.log("TITLE: " + title);
         console.log("NavLink: " + navLinks[i].innerHTML);
+        console.log("MetaTitle: "+ metaTitle);
         console.log(navTitle == title);
         // console.log("\n\n\n");
-        if(title == navTitle){
+        if(metaTitle == navTitle){
             // alert(navTitle + " = " + title);
             // target the element, not the innerHTML
             navLinks[i].style.textDecoration = "underline overline whitesmoke";
@@ -88,50 +95,3 @@ function highlightPageTitle(){
     }
 
 }
-
-
-
-// function submitForm(){
-//     //means that the user cannot press the button to send data over and over again; after they hit the button the first time, we disable it
-//     _("mybtn").disabled = true;
-//     //target the status element, and we tell them to please wait so they are todl that the data is bein gprocessesd is happening
-//     _("status").innerHTML = 'please wait ...';
-//     //formdata creates a new data set once it is sent once it is transmitted to PHP
-//     var formdata = new FormData();
-//     //sending a key value pair for the subject
-//     // s is picked up as a posted variable in the php script, the other is the value which will be whatever the user typed in the subject field, and we passed in the value propery(what was typed in)
-//     formdata.append("s", _("s").value);
-//     //key value pair for first name
-//     formdata.append("fn", _("fn").value);
-//     formdata.append("ln", _("ln").value);
-//     formdata.append("m", _("m").value);
-//     formdata.append("p", _("p").value);
-//     formdata.append("e", _("e").value);
-//     formdata.append("pPref", _("pPref").value);
-//     formdata.append("ePref", _("ePref").value);
-
-
-//     // _________________
-//     // create a new XMLHttpRequest object 
-//     var ajax = new XMLHttpRequest();
-//     //run the open method, and post the data to the php script named "form_response";
-//     ajax.open("POST", "form_response.php");
-//     //when the ajax ready state changes the following runs
-//     ajax.onreadystatechange = function(){
-//         //check if the data is finished processing by PHP and returned data to the AJAX object
-//         if(ajax.readyState == 4 && ajax.status == 200){
-//             //if the response from PHP is successessful, we target the form and alter the html 
-//             if(ajax.responseText == "success"){
-//                 ("contactMak").innerHTML = `<h2> Thanks ${_("fn").value } your message was successfully sent</h2>`;
-//                 ("contactMak").innerHTML = "<h2>Thank you "+ _("fn").value + "your message was successfully sent</h2>";
-
-//             }else{
-//                 _("status").innerHTML = ajax.responseText;//response text from php
-//                 _("mybtn").disabled = false;//in the event of data processing failure re-enables the button so the user can try to send their message again
-//             }
-//         }
-//     }
-//     //run the send method on the ajax method and send the formdata
-//     ajax.send(formdata);
-
-// }
