@@ -4,7 +4,7 @@
 
 
     use PHPMailer\PHPMailer\PHPMailer;
-    require '../vendor/autoload.php';
+    require '../vendorFolder/autoload.php';
     $errors = [];
     //if variables in the form have been posted through to the page
     //to see what variable is specified in the super global
